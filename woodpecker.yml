@@ -18,6 +18,6 @@ steps:
           -H "x-deploy-secret: $DEPLOY_SECRET"
           -H "Content-Type: application/octet-stream"
           --data-binary @-
-    secrets: valami_hosszu_titkos_string
+    secrets: [deploy_secret]
     when:
       branch: main
