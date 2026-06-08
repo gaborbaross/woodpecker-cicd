@@ -1,6 +1,7 @@
 Woodpecker CI/CD default config:
 place .woodpecker.yml file to GH repo root path
 WARNING: DO NOT MODIFY THE FILE
+file>>
 # .woodpecker.yml
 # Ezt a fájlt a tanuló a React projekt gyökerébe teszi.
 # Push után Woodpecker automatikusan buildel és deployol.
