@@ -11,8 +11,6 @@ steps:
 
   - name: deploy
     image: alpine
-    volumes:
-      - /opt/dest_html:/var/www/pages
     commands:
       # CI_REPO_OWNER = a tanuló GitHub felhasználóneve
       - apk add curl
