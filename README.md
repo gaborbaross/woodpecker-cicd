@@ -44,6 +44,13 @@ steps:
       - cp -r dist/. /var/www/pages/$CI_REPO_OWNER/
 
 ```
+`src/main.tsx` edit:
+```diff
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
++    <BrowserRouter basename={import.meta.env.BASE_URL}>
+...
+```
 
 `vite.config.js` edit:
 ```diff
