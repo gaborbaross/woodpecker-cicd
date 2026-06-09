@@ -1,5 +1,6 @@
 ## 🚀 Woodpecker CI/CD default config
 Configs for Woodpecker CI/CD React frontend builder & deployer
+
 Place `.woodpecker.yml` file to GH repo root path
 
 > [!NOTE]
