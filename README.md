@@ -2,6 +2,23 @@
 Configs for Woodpecker CI/CD React frontend builder & deployer
 
 > [!NOTE]
+> test 2
+
+> [!TIP]
+> dffsdfsdfsd
+
+> [!IMPORTANT]
+> fdsdffdsfd
+>
+
+> [!WARNING]
+> dfsfdssfddsf
+>
+
+> [!CAUTION]
+> dsffddsfsfdsdf
+
+> [!NOTE]
 > Mivel a build-elt frontend-ek nem aldomain-en vannak hanem path-route alapon, ezért
 > 2 fájlt módosítani kell még
 
