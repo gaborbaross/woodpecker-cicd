@@ -1,12 +1,10 @@
 ## 🚀 Woodpecker CI/CD default config
 Configs for Woodpecker CI/CD React frontend builder & deployer
+Place `.woodpecker.yml` file to GH repo root path
 
 > [!NOTE]
-> Mivel a build-elt frontend-ek nem aldomain-en vannak hanem path-route alapon, ezért
-> 2 fájlt módosítani kell még
+> + Mivel a build-elt frontend-ek nem aldomain-en vannak hanem path-route alapon, ezért 2 fájlt módosítani kell még
 > + CORS policy a backend-en
-
-Place `.woodpecker.yml` file to GH repo root path
 
 > [!CAUTION]
 > DO NOT MODIFY THE FILE JUST RENAME TO `.woodpecker.yml`
