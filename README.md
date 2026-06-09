@@ -44,3 +44,11 @@ steps:
       - cp -r dist/. /var/www/pages/$CI_REPO_OWNER/
 
 ```
+
+`vite.config.js` edit:
+```js
+export default defineConfig({
+  +base: process.env.VITE_BASE_PATH ? `/${process.env.VITE_BASE_PATH}/` : '/',
+  plugins: [react()],
+})
+```
