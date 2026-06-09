@@ -24,7 +24,7 @@ Configs for Woodpecker CI/CD React frontend builder & deployer
 
 Place `.woodpecker.yml` file to GH repo root path
 
-> [!WARNING]
+> [!CAUTION]
 > DO NOT MODIFY THE FILE JUST RENAME TO `.woodpecker.yml`
 
 > [!IMPORTANT]
@@ -70,7 +70,8 @@ steps:
       - cp -r dist/. /var/www/pages/$CI_REPO_OWNER/
 
 ```
-`src/main.tsx` edit:
+> [!IMPORTANT]
+> `src/main.tsx` edit:
 ```diff
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -78,7 +79,8 @@ createRoot(document.getElementById('root')).render(
 ...
 ```
 
-`vite.config.js` edit:
+> [!IMPORTANT]
+> `vite.config.js` edit:
 ```diff
 export default defineConfig({
 +  base: process.env.VITE_BASE_PATH ? `/${process.env.VITE_BASE_PATH}/` : '/',}
