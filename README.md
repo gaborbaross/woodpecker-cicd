@@ -10,7 +10,8 @@ Place `.woodpecker.yml` file to GH repo root path
 # .woodpecker.yml
 # Ezt a fájlt a tanuló a React projekt gyökerébe teszi.
 # Push után a Woodpecker automatikusan buildel és deployol.
-# Az első build előtt vár 30 mp-et, hogy az auto-trust script elvégezze a módosítást a repo-n, ezt csak egyszer kell megcsinálni
+# Az első build előtt vár 30 mp-et, hogy az auto-trust script elvégezze a módosítást a repo-n,
+# ezt csak egyszer kell megcsinálni
 # CI_REPO_OWNER = a tanuló GitHub felhasználóneve
 
 when:
