@@ -15,15 +15,15 @@ steps:
     image: node:22-alpine
     commands:
       - npm ci
-      - npm run build
+      - VITE_BASE_PATH=frontend/$CI_REPO_OWNER npm run build
   - name: deploy
     image: alpine
-    volumes:
-      - /opt/dest_html:/var/www/pages
     commands:
-      - mkdir -p /var/www/pages/$CI_REPO_OWNER
-      - rm -rf /var/www/pages/$CI_REPO_OWNER/*
-      - cp -r dist/. /var/www/pages/$CI_REPO_OWNER/
+      - apk add --no-cache curl tar
+      - |
+        tar -cz -C dist . | curl -f -X POST "http://deploy-api:3000/deploy/$CI_REPO_OWNER" \
+          -H "Content-Type: application/octet-stream" \
+          --data-binary @-
     when:
       branch: main
 ```
