@@ -1,10 +1,17 @@
 ## 🚀 Woodpecker CI/CD default config
 Configs for Woodpecker CI/CD React frontend builder & deployer
 
+> [!NOTE]
+> Mivel a build-elt frontend-ek nem aldomain-en vannak hanem path-route alapon, ezért
+> 2 fájlt módosítani kell még
+
 Place `.woodpecker.yml` file to GH repo root path
 
 > [!WARNING]
 > DO NOT MODIFY THE FILE JUST RENAME TO `.woodpecker.yml`
+
+> [!IMPORTANT]
+> srx.tsx
 
 ```yaml
 # .woodpecker.yml
